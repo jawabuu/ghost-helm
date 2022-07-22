@@ -5,6 +5,47 @@ entries:
       category: CMS
     apiVersion: v2
     appVersion: 5.2.4
+    created: "2022-07-22T18:36:08.352006966Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - ghost-database
+      version: 9.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: b80bcc733b1aa1914d574bfe0167be535940c26167f789505bd6f40acef2c61f
+    home: https://github.com/bitnami/charts/tree/master/bitnami/ghost
+    icon: https://bitnami.com/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: jawabuu
+      url: https://github.com/jawabuu/ghost-helm
+    name: ghost
+    sources:
+    - https://github.com/bitnami/bitnami-docker-ghost
+    - https://www.ghost.org/
+    urls:
+    - https://github.com/jawabuu/ghost-helm/releases/download/ghost-helm-chart-19.0.9/ghost-19.0.9.tgz
+    version: 19.0.9
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 5.2.4
     created: "2022-07-22T17:12:22.71751447Z"
     dependencies:
     - condition: mysql.enabled
@@ -42,4 +83,4 @@ entries:
     urls:
     - https://github.com/jawabuu/ghost-helm/releases/download/ghost-helm-chart-19.0.8/ghost-19.0.8.tgz
     version: 19.0.8
-generated: "2022-07-22T17:12:22.717528571Z"
+generated: "2022-07-22T18:36:08.352045066Z"
