@@ -5,10 +5,10 @@ on:
     branches:
       - 'main'
     paths:
-      - 'ghost/**'
+      - 'helm/**'
   pull_request:
     paths:
-      - 'ghost/**'
+      - 'helm/**'
 
 jobs:
   lint-test:
@@ -45,6 +45,6 @@ jobs:
       - name: Run chart-testing (lint)
         run: ct lint --print-config
         env:
-          CT_CHART_DIRS: .
+          CT_CHART_DIRS: helm
           CT_LINT_CONF: lintconf.yaml
           CT_SINCE: HEAD
