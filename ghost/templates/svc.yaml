@@ -39,7 +39,7 @@ spec:
   {{- end }}
   ports:
     {{- if .Values.ghostEnableHttps }}
-    - name: secure
+    - name: tls
       port: {{ coalesce .Values.service.ports.https .Values.service.httpsPort }}
       protocol: TCP
       targetPort: https
