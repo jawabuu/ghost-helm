@@ -39,12 +39,12 @@ jobs:
             echo "::set-output name=changed::true"
           fi
         env:
-          CT_CHART_DIRS: ghost
+          CT_CHART_DIRS: .
           CT_SINCE: HEAD
 
       - name: Run chart-testing (lint)
         run: ct lint --print-config
         env:
-          CT_CHART_DIRS: ghost
+          CT_CHART_DIRS: .
           CT_LINT_CONF: lintconf.yaml
           CT_SINCE: HEAD

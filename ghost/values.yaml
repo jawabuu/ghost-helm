@@ -358,7 +358,7 @@ service:
   ##
   ports:
     http: 80
-    https: 443
+    https: 2368
   ## Node ports to expose
   ## @param service.nodePorts.http Node port for HTTP
   ## @param service.nodePorts.https Node port for HTTPS

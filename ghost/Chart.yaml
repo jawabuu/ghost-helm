@@ -28,8 +28,8 @@ keywords:
 - nodejs
 - javascript
 maintainers:
-- name: Bitnami
-  url: https://github.com/bitnami/charts
+- name: jawabuu
+  url: https://github.com/jawabuu/ghost-helm
 name: ghost
 sources:
 - https://github.com/bitnami/bitnami-docker-ghost
